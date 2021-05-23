@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div th:value="${item.name}"></div>
+	<div>商品の更新</div>
+	<form method="post" th:action="@{/items/update/complete}" >
+ 		<input type="hidden" th:value="${item.id}">
+		<input type="text" name="name">
+		<input type="number" name="price">
+		<input type="submit" value="更新">
+	</form>
+</body>
+</html>

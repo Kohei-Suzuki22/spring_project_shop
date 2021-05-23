@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>商品の新規登録</div>
+	<form method="post" th:action="@{/items/create/complete}">
+		商品名:<input type="text" name="name">
+		値段: <input type="number" name="price">
+		<input type="submit" value="登録">
+	</form>
+
+</body>
+</html>
